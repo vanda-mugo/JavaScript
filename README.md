@@ -1,0 +1,1 @@
+The content of this repository will vary majorly being part of the Codecademy course on fullstack Engineering. Main purpose being to share with the coding community of web developers and forums hosted by codecademy. Happy coding !
