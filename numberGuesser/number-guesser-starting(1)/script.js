@@ -37,21 +37,3 @@ const advanceRound = () => {
     currentRoundNumber += 1;
 };
 
-
-const ans1 = compareGuesses(6, 4, generateTarget());
-console.log(ans1);
-let valUpdate;
-if(ans1 === true){
-    valUpdate = 'human';
-}
-if(ans1 === false){
-    valUpdate = 'computer';
-}
-
-updateScore(valUpdate);
-advanceRound();
-
-console.log(humanScore);
-console.log(computerScore);
-console.log(currentRoundNumber);
-
