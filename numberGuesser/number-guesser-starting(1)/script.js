@@ -13,7 +13,7 @@ const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
         return true;
     }
     let humanDiff = Math.abs(secretTarget - humanGuess);
-    let compDiff = Math.abs(secretTarget - computerGuesses);
+    let compDiff = Math.abs(secretTarget - computerGuess);
 
     if(humanDiff < compDiff){
         // means that the human is closer to the actucal value 
