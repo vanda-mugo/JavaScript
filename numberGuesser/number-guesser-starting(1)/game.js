@@ -97,3 +97,6 @@ const handleValueChange = value => {
 humanGuessInput.addEventListener('input', function(e) {
   handleValueChange(e.target.value);
 });
+
+let p = document.getElementById('content');
+p.textContent = "this is the content I want to display.";
