@@ -1,20 +1,18 @@
-##Javascript Project practice 
+# Javascript Project Practice
 
-#Description : 
-The main purpose of this repository is to share course, personal and challenge projects that I do
-for review with forum members and feedback from any developer interested in the same .
+## Description
+The main purpose of this repository is to share course, personal, and challenge projects that I do for review with forum members and feedback from any developer interested in the same.
 
+## Features Languages
+- **Javascript**
+- **HTML**
+- **CSS**
 
-#features languages :# 
-                    **Javascript
-                    **HTML
-                    **CSS
+## How to Use It
+Within each project, a README file will be provided to explain how to experiment with/use it to achieve the desired explained concepts.
 
-how to use it: within each project will be provided a readMe file associated with the project on how to experiment/ use it to achieve the desired explained concepts 
-
-#Technologies :#
-              1. React.js
-              2. Express.js
-              3. Next.js
-              4. Node.js
-
+## Technologies
+1. React.js
+2. Express.js
+3. Next.js
+4. Node.js
