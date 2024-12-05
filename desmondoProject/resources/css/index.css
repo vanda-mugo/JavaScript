@@ -1,0 +1,51 @@
+
+#main_header h1{
+    font-size: 200px;
+    font-weight: bold;
+    color: khaki;
+    font-family: Helvetica;
+    text-align: center;  
+}
+
+#main_header{
+    background-image: url('../images/image1.webp');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.brushes
+{
+    background-color: mediumspringgreen;
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+#blue{
+    font-family: Helvetica;
+    font-weight: bold;
+    color: blue;
+}
+.frames .head{
+    background-color: lightcoral;
+    font-size:32px ;
+    font-weight: bold;
+    color: white;
+}
+#link2{
+    color: blue;
+    font-weight: bold;
+    font-family:Helvetica ;
+}
+.paint{
+    background-color: skyblue;
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+.image2{
+    text-align: right;
+}
