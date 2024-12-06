@@ -1,0 +1,14 @@
+{
+  "name": "learn-js-test-with-mocha",
+  "version": "1.0.0",
+  "description": "this is for learning the package mocha for javascript testing ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*_test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^11.0.1"
+  }
+}
