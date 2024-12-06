@@ -18,36 +18,38 @@ This repository demonstrates how to use Mocha for testing JavaScript application
 
 ## Setup
 
-1. **Initialize a Project**:
+## 1. Initialize a Project:
    ```bash
    npm init -y
+  ```
 
-
-2. **your-project/**:
+## 2. your-project/:
   ```bash
   ├── test/
   │   └── example_test.js
   ├── index.js
   └── package.json
-
-3. **installing mocha as a development dependency**:
+  ```
+## 3. installing mocha as a development dependency:
   ```bash
   npm install --save-dev mocha
+  ```
 
-
-4. **Update the test Script: In your package.json, change the scripts section to include a test script that runs   Mocha:** 
-**This allows you to run npm test from anywhere in your project directory.**:
+## 4. Update the test Script: In your package.json, change the scripts section to include a test script that runs   Mocha:This allows you to run npm test from anywhere in your project directory.:
 #### Code Snippet
 
-```javascript
+  ```json
   {
     "scripts": {
       "test": "mocha test/**/*_test.js"
     }
   }
+  ```
 
-//brief section on describe ... it 
-// test/example_test.js
+
+## writing Tests
+### brief section on describe and it 
+```javascript
 const assert = require('assert');
 
 describe('Math', () => {
@@ -67,8 +69,10 @@ describe('Math', () => {
     });
   });
 });
+```
 
-//brief setup and teardown 
+### brief section on setup and teardown 
+```javascript
 // test/setup_teardown_test.js
 describe('Array', () => {
   let arr;
@@ -101,4 +105,29 @@ describe('Array', () => {
     assert.deepStrictEqual(arr, [1, 2, 3]);
   });
 });
+```
 
+## Assertions
+
+### using `assert.ok`
+verifies the value is truthy
+```javascript
+assert.ok(true); // Passes
+assert.ok(false); // Fails
+```
+
+### Using `assert.strictEqual`
+Tests strict equality:
+
+```javascript
+assert.strictEqual(2 + 2, 4); // Passes
+assert.strictEqual(2 + 2, '4'); // Fails
+```
+
+### Using `assert.deepEqual`
+Checks the equality of objects and arrays:
+
+```javascript
+assert.deepEqual({ a: 1 }, { a: 1 }); // Passes
+assert.deepEqual([1, 2, 3], [1, 2, 3]); // Passes
+```
