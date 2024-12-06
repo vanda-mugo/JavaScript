@@ -23,27 +23,30 @@ This repository demonstrates how to use Mocha for testing JavaScript application
    npm init -y
 
 
-your-project/
-├── test/
-│   └── example_test.js
-├── index.js
-└── package.json
+2. **your-project/**
+  ```bash
+  ├── test/
+  │   └── example_test.js
+  ├── index.js
+  └── package.json
 
-installing mocha as a development dependency
-npm install --save-dev mocha
+3. **installing mocha as a development dependency**
+  ```bash
+  npm install --save-dev mocha
 
 
-Update the test Script: In your package.json, change the scripts section to include a test script that runs Mocha:
-This allows you to run npm test from anywhere in your project directory.
+4. **Update the test Script: In your package.json, change the scripts section to include a test script that runs   Mocha:** 
+**This allows you to run npm test from anywhere in your project directory.**
+#### Code Snippet
 
-{
-  "scripts": {
-    "test": "mocha test/**/*_test.js"
+```javascript
+  {
+    "scripts": {
+      "test": "mocha test/**/*_test.js"
+    }
   }
-}
 
-brief section on describe ... it 
-
+//brief section on describe ... it 
 // test/example_test.js
 const assert = require('assert');
 
@@ -65,10 +68,7 @@ describe('Math', () => {
   });
 });
 
-
-
-brief setup and teardown 
-
+//brief setup and teardown 
 // test/setup_teardown_test.js
 describe('Array', () => {
   let arr;
