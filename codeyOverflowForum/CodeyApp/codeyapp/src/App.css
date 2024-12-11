@@ -1,0 +1,26 @@
+img {
+  border-radius: 70px;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 10px;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+  margin: 0;
+}
+
+p {
+  margin-left: 70px;
+}
+
+.din{
+  border-radius: 100px;
+  width: 400px;
+  height: 400px;
+  float:none;
+  margin: 10px;
+}
