@@ -68,3 +68,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Concept of project 
+
+# Thoughts Tracker
+
+## Description
+
+This project is a simple React application that allows users to add, view, and remove thoughts. It demonstrates the use of React components and hooks, specifically `useState` and `useEffect`.
+
+## Features
+
+- Add new thoughts with an expiration time.
+- View a list of current thoughts.
+- Remove thoughts from the list.
+- Automatically remove thoughts when they expire.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 14 or later)
+- npm (Node Package Manager)
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/yourusername/thoughts-tracker.git
