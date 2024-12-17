@@ -18,7 +18,18 @@ By the end of this practice project, you will have improved your skills in styli
 ## Project Structure
 
 ```bash 
-rock-paper-scissors/ ├── public/ │ └── index.html├── src/ │ ├── components/ │ │ └── Game.jsx│ ├── styles/ │ │ └── Game.module.css│ ├── App.jsx│ ├──index.js├── package.json├── README.md└── .gitignore
+rock-paper-scissors/ 
+├── public/ 
+├── index.html
+├── src/ 
+│ ├── assets/ 
+│ └── Game.module.css
+│ └── App.jsx
+│ └──Game.jsx
+│ └──main.jsx
+├── package.json
+├── README.md
+└── .gitignore
 ```
 ## Styling Techniques
 
