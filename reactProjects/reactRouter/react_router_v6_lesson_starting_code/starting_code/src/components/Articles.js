@@ -18,7 +18,7 @@ export default function Articles () {
   const filteredArticles = title ? filterArticles(title, articles) : Object.values(articles)
 
   return (
-    <main>
+    <main >
       <h1>Articles</h1>
       <ul>
         { filteredArticles.map(article => (

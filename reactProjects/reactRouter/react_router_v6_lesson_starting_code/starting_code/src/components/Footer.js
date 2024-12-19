@@ -18,9 +18,15 @@ export default function Footer() {
   }
 
   return (
-    <footer>
+    <footer style={{backgroundColor:"purple"}}>
       <button onClick={goBack}>Back</button>
       <button onClick={goForward}>Forward</button>
     </footer>
   );
 }
+
+
+/*
+Note by that this footer component is also imported within the root component
+
+*/
