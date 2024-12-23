@@ -1,0 +1,15 @@
+.playlistInput {
+    border: none;
+    /* Subtle border color */
+    background-color: transparent;  /* Blend with the background */
+    outline: none;
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #fff;  /* Text color */
+    width: auto;  /* Make the width fit the content */
+    display: inline-block;  /* Make sure the width adjusts to content */
+}
+
+.playlistInput:focus {
+    border-bottom-color: #0073e6;  /* Slight change in color when focused */
+}
