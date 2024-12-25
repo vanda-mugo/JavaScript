@@ -1,0 +1,30 @@
+# Working with Spotify API
+
+To work with the Spotify API, you need to follow these steps:
+
+1. **Create a Spotify Developer Account**:
+    - Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications).
+    - Log in with your Spotify account.
+    - Click on "Create an App" and fill in the required details.
+    - Once created, you will get a `Client ID` and `Client Secret`.
+
+2. **Set Up Authorization**:
+    - Spotify uses OAuth 2.0 for authorization.
+    - You need to get an access token to make API requests on behalf of a user.
+
+3. **Authorization Code Flow**:
+    - Redirect the user to Spotify's authorization page.
+    - Get the authorization code from the callback URL.
+    - Exchange the authorization code for an access token.
+
+4. **Making API Requests**:
+    - Use the access token to make requests to the Spotify API endpoints.
+
+## Example Code
+
+### Step 1: Redirect User to Spotify Authorization Page
+
+
+# client ID : 453f3387e40d46a2b2f0c46394764e40
+
+# client secret : 1bb7f0b228d244e686ec91a13ff20252
