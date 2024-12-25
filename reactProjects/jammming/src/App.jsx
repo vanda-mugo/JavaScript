@@ -94,6 +94,7 @@ function App() {
       />
       <Auth />
       <Search />
+
     </>
   )
 }
