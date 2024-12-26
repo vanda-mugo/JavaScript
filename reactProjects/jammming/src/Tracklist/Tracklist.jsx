@@ -1,4 +1,5 @@
 import React,{ useEffect, useState } from "react";
+import SearchBar from "../SearchBar/Search";
 
 //implement the hardcoded track array, an array of track objects 
 
@@ -6,7 +7,7 @@ import React,{ useEffect, useState } from "react";
 // above 
 
 
-const Tracklist = ({tracks, onAdd}) => {
+const Tracklist = ({tracks, onAdd, setQuery, query ,handleSearch}) => {
 
     //content in the return statement 
     // use the map() method to iterate over arrays and render multiple components dynamically
@@ -14,8 +15,9 @@ const Tracklist = ({tracks, onAdd}) => {
     // as a prop from the parent component 
     return (
         <main>
+            <SearchBar setQuery={setQuery} query={query} handleSearch={handleSearch} />   
             <ul>
-            <h2>From Trackslist</h2>
+            <h2>Results from Spotify</h2>
             {tracks.map((track) => {
                 return (
                     <li key={track.id}>

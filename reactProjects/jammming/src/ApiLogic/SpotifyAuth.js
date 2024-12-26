@@ -3,12 +3,8 @@ import React, { useEffect } from 'react';
 const clientId = import.meta.env.VITE_CLIENT_ID;
 const redirectUri = import.meta.env.VITE_REDIRECT_URI;
 const scopes = [
-    'user-read-private',
-    'user-read-email',
-    'playlist-read-private',
     'playlist-modify-public',
     'playlist-modify-private',
-    'user-library-read',
     // Add other scopes as needed
 ];
 
@@ -44,6 +40,7 @@ export const SpotifyAuth = {
         //The substring(1) method removes the leading # from the hash fragment. So, window.location.hash.substring(1) returns 
         // access_token=YOUR_ACCESS_TOKEN&token_type=Bearer&expires_in=3600
         const urlParams = new URLSearchParams(window.location.hash.substring(1));
+        console.log(urlParams);
         accessToken = urlParams.get('access_token');
         expiresIn = urlParams.get('expires_in');
 
