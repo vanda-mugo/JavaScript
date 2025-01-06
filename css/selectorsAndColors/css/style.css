@@ -1,0 +1,57 @@
+/*this is an element selector */
+body{
+    font-size: 22px;
+    background-color: palegoldenrod;
+    color: black;
+
+}  
+
+p{
+    color: rgba(31, 31, 202, 0);
+}
+
+
+/*this is a class selector */
+.gray
+{
+    color: gray;
+}
+/*this is an id selector */
+#red
+{
+    color: red;
+}
+
+/*this is a group selector */
+
+h1,h2,h3
+{
+    color: blue;
+}
+
+
+/*this is a universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    /*border: 3px solid black;*/
+}
+
+
+/*this is a descendant selector
+in this case the p is a descendant of div
+ */
+div p
+{
+    color: green;
+}
+
+
+/*this is a child selector*/
+button, input, textarea, select
+{
+    font-size: 22px;
+    color: blue;
+}
+
+/*note by that important is used to override the previous style */
