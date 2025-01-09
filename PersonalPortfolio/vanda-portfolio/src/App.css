@@ -1,0 +1,99 @@
+/*custom fonts*/
+@font-face{
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight: 700;
+}
+@font-face{
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-weight: 500;
+}
+@font-face{
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Book.ttf');
+  font-weight: 400;
+}
+
+/* Default styles */
+
+*{
+  margin: 0;
+  padding: 0;
+  /*the width and the height properties include the content, padding and border box but not the margin, specified 
+  width and height will be including the total size of the element including the padding and the border */
+  box-sizing: border-box;
+}
+
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+
+body{
+  font-weight: 400;
+  /*this means that the excess elements in the x axis are hidden and therefore any overflowing content will be clipped 
+  and no scrollbars will be visible*/
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color : #fff !important;
+  font-family: 'Centra', sans-serif !important;  
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+
+/*
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+*/
+
