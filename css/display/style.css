@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");   /* This is a Google font import */
+
+body{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    background-color: lightcoral;
+}
+
+main{
+    background-color: aqua;
+    width: 50%;
+}

@@ -45,12 +45,14 @@ li a, li a:visited{
     padding: 1rem;
     text-decoration: none;
     color: #333;
+    transition: color 4.5s ease;
 }
 
 li a:hover{
     background-color: #333;
-    color: #f5f5f5;
+    color: #e8e8ec;
     cursor: pointer;
+    
 }
 
 li a{
