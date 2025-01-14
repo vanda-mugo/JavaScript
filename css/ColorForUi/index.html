@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Codecademy | Color For UI</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Site Wide Header -->
+    <header role="banner" aria-label="site-wide-navigation" class="site-header">
+      <div class="container">
+        <nav role="navigation" aria-label="navigation" class="site-header-nav">
+          <ul class="site-nav-left">
+            <li>
+              <a href="#">
+                <img src="https://content.codecademy.com/programs/ui-design/color-ui/logo.svg" alt="Citrus" class="logo" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="site-nav-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="site-nav-link-active">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="site-nav-right">
+            <li>
+              <a href="#" class="site-nav-link" aria-label="site-wide-search-button" role="button">
+                <img src="https://content.codecademy.com/programs/ui-design/color-ui/icon-search.svg" alt="Search" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button button-secondary button-small site-nav-link">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Site Main Content -->
+    <main role="main" class="site-main">
+      <header aria-labelledby="page-title" class="clearfix site-main-header">
+        <div class="container">
+          <h1 id="page-title">Contact Our Team</h1>
+          <p class="col-1-2">We are standing by for your questions, comments or concerns. If there is anything we can do, please reach out and let us know.</p>
+        </div>
+      </header>
+      <section role="region" aria-label="contact-form" class="site-main-section">
+        <div class="container">
+          <div class="card contact-form-container">
+            <div class="clearfix">
+              <div class="col-1-2">
+                <figure class="alert alert-error">
+                  <div class="alert-content">
+                    <img src="https://content.codecademy.com/programs/ui-design/color-ui/icon-help.svg" alt="Help indicator" />
+                    <p>Looks like you forgot to add your name!</p>
+                  </div>
+                </figure>
+                <h2 class="section-header">Leave A Message</h2>
+                <form role="form" class="clearfix">
+                  <label>Your Name</label>
+                  <input type="text" placeholder="Full Name" class="input-error" />
+                  <label>Your Email</label>
+                  <input type="email" placeholder="Email Address" />
+                  <label>Select Contact Reason</label>
+                  <select>
+                    <option selected disabled>Please Select One</option>
+                    <option>Customer Service Question</option>
+                    <option>Billing Question</option>
+                    <option>Website Question</option>
+                  </select>
+                  <label>Issue Details</label>
+                  <textarea placeholder="Provide as much detail as you can so we can address your issue."></textarea>
+                  <input type="submit" value="Submit Message" class="button button-primary float-right" />
+                </form>
+              </div>
+              <div class="col-1-2">
+                <p><b>Our Location</b></p>
+                <img src="https://content.codecademy.com/programs/ui-design/color-ui/map.jpg" alt="Office Location" />
+                <ul class="location-details">
+                  <li><b>Address:</b> 233 S Wacker Dr, Chicago, IL 60606</li>
+                  <li><b>Phone:</b> (123) 456-7890</li>
+                  <li><b>Email:</b> support@citrusmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="site-main-background" arai-hidden="true"></div>
+    </main>
+    <!-- Site Wide Footer -->
+    <footer role="contentinfo" class="footer">
+      <div class="container">
+        <nav role="navigation" class="clearfix">
+          <ul class="col-1-4 footer-section">
+            <li>
+              <img src="https://content.codecademy.com/programs/ui-design/color-ui/logo.svg" alt="Citrus" class="logo" />
+            </li>
+            <li>
+              <p><smalL>All Rights Reserved | &copy; <time>2017</time></smalL></p>
+            </li>
+          </ul>
+          <div class="col-1-4 footer-section" aria-labelledby="product-pages">
+            <p id="product-pages"><b>About</b></p>
+            <ul>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Schedule Demo</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-1-4 footer-section" aria-labelledby="support-pages">
+            <p id="support-pages"><b>Support</b></p>
+            <ul>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Documentation</a>
+              </li>
+              <li>
+                <a href="#">API Status</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-1-4 footer-section" arai-labelledby="social-links">
+            <p id="support-pages"><b>Stay Up To Date</b></p>
+            <form>
+              <input type="email" placeholder="Your emaill address" class="footer-email-input">
+              <input type="submit" value="Submit" class="button button-secondary footer-email-button"/>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
