@@ -13,6 +13,9 @@
     /* this is also another way of making the nav go to the right */
     justify-content: space-between;
     border-bottom: 1px solid seashell;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
     
 }
 .nav{
@@ -158,6 +161,6 @@ footer{
 
 .copyRight{
     text-align: left;
-    width: 100%;
-    margin-left: 20px;
+    width: 1200px;
+    margin: 0 auto;
 }
