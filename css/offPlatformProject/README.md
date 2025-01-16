@@ -48,4 +48,12 @@ tea-cozy/
 └── README.md
 ```
 
- ## Getting Started 1. Clone the repository or download the project files. 2. Open `index.html` in your preferred code editor. 3. Include the CSS file (`styles.css`) and ensure the file path is correct. 4. Add the provided images to the `images` directory. 5. Follow the design spec to replicate the design using HTML and CSS. ## Technologies Used - HTML - CSS
+ ## Getting Started 
+1. Clone the repository or download the project files. 
+2. Open `index.html` in your preferred code editor. 
+3. Include the CSS file (`styles.css`) and ensure the file path is correct. 
+4. Add the provided images to the `images` directory. 
+5. Follow the design spec to replicate the design using HTML and CSS. 
+## Technologies Used 
+- HTML 
+- CSS
