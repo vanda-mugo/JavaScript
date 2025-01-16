@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica;
+    background-color: #000000;
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.header{
+    display: flex;
+    height: 69px;
+    align-items: center;
+    /* this is also another way of making the nav go to the right */
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    
+}
+.nav{
+    /* you can use this to move the nav to the right */
+    /*margin-left: auto;*/
+    margin: none;
+    height: 60px;
+    font-size: 22px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin:0 10px;
+    text-decoration: underline;
+}
+.nav ul li a{
+    color: #FFFFFF;
+}
+.nav ul li a:hover{
+    color: indigo;
+}
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+    
+}
+main div{
+    display: flex;
+    justify-content: center;
+}
+
+.sectionA { 
+    display: flex; /* Add flex display */ 
+    flex-direction: column; /* Arrange children vertically */ 
+    justify-content: center; /* Center children vertically */ 
+    align-items: center; /* Center children horizontally */ 
+    height: 700px; 
+    width: 1200px; 
+    background-image: url("../assets/background/img-mission-background.jpg"); 
+    
+}
+.sectionA h2 , .sectionA h4{
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    width: 1200px;
+}
+.sectionB{
+    width: 1000px;
+    margin-top: 50px;
+}
+.sectionB div h2, h4{
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.sectionB .images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionB .images div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionB .images img{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+.sectionB .images div h3{
+    margin: 0;
+}
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sectionC{
+    background-image: url("../assets/footerBackground/img-locations-background.jpg");
+    height: 500px;
+    width: 1200px;
+    
+}
+
+
+.sectionC .Location{
+    margin-top: 70px;
+    background: none;
+    margin-bottom: 15px;
+}
+.sectionC .Location h2{
+    background: none;
+    opacity: 1;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+}
+
+.sectionC .addresses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.sectionC .addresses div{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sectionD{
+    width: 100%;
+}
+
+.contact{
+    text-align: center;
+    box-sizing: border-box;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.copyRight{
+    text-align: left;
+    width: 100%;
+    margin-left: 20px;
+}
