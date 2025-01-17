@@ -22,26 +22,30 @@ body{
     border: 3px solid rgba(3, 99, 3, 0.9);
     margin: 10px auto;
     border-radius: 10px;
+    padding: 30px;
 }
 
 header{
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     border: 2px dotted rgb(3, 99, 3);
     margin-top: 20px ;
-    box-sizing: border-box;
     border-radius: 10px;
+    flex-direction: column;
+    padding: 0 30px;
 }
 
 header .logo{
     display: flex;
     align-items: center;
     height: 100px;
-    margin: 30px;
+    margin: 30px auto;
     width: auto;
+    justify-content: center;
 }
 header .logo img{
     background-color: rgb(3, 99, 3);
@@ -78,18 +82,27 @@ main{
     border: 2px dotted rgb(3, 99, 3);
     margin: 50px;
     border-radius: 10px;    
+    padding: 50px;
 }
 
 main .informational{
     margin: 50px auto;
     text-align: center;
-    width: 1000px;
+    max-width: 1000px;
     align-items: center;
     color: rgb(3, 99, 3);
+}
+.informational div{
+    text-align: center;
+    max-width: 100%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column; 
 }
 
 .informational h2{
     font-size: 30px;
+    text-align: center;
 }
 
 .portfolio {
@@ -145,6 +158,9 @@ footer .team{
     background: none;
     display: flex;
     justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .memberImgs h3{
     background: none;
