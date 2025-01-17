@@ -95,7 +95,7 @@ main .informational{
 .portfolio {
     text-align: center;
     margin: 100px auto;
-    width: 1200px;
+    max-width: 1500px;
     border: 2px dotted rgb(3, 99, 3);
     border-radius: 10px;
 
@@ -112,6 +112,7 @@ main .informational{
     height: 400px;
     width: auto;
     margin: 20px;
+    border-radius: 5px;
 }
 
 footer {
