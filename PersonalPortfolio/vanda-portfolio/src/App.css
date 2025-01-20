@@ -50,6 +50,18 @@ h1, h2, h3, h4, h5, h6{
   line-height: normal;
 }
 
+@media screen and (min-width: 1200px){
+  body{
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1420px){
+  body{
+    max-width: 100%;
+  }
+}
+
+
 
 /*
 
@@ -94,6 +106,45 @@ h1, h2, h3, h4, h5, h6{
 
 .read-the-docs {
   color: #888;
+}
+
+
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
+p.success {
+	color: green;
+}
+
+p.danger {
+	color: red;
 }
 */
 

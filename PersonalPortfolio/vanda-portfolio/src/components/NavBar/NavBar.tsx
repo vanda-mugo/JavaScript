@@ -43,7 +43,7 @@ export const NavBar = () : JSX.Element => {
                         <span className="navbar-text">
                             <div className="social-icon">
                                 <a href="#"><img src={navIcon1} alt="" /></a>
-                                <a href="#"><img src={navIcon2} alt="" /></a>
+                                <a className='gitIcon' href="#"><img src={navIcon2} alt="" /></a>
                                 <a href="#"><img src={navIcon3} alt="" /></a>
                             </div>
                             <button className="btn btn-primary" onClick={() => console.log('connect')}><span>Lets Connect</span></button>

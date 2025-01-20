@@ -73,15 +73,26 @@ export const Banner = (): JSX.Element => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <div>
-                            <span className="tagline">Hello, I'm Vanda</span>
-                            <h1>{'Hi Im John Mugo '}<span className="wrap">{text}</span></h1>
-                            <p>dummy text of the printing and typesetting industry </p>
-                            <button onClick={():void => console.log('connect')}>Lets connect<ArrowRightCircle size={25} /></button>
-                        </div>
+                        <TrackVisibility>
+                            {({ isVisible  }) => 
+                                <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>    
+                                    <span className="tagline">Welcome to my Portfolio</span>
+                                    <h1>{'Hi Im John Mugo'}</h1>
+                                    <h1>Im a <span className="txt-rotate"  data-rotate='["Web Developer", "Designer", "Freelancer", "C++ Developer", "Software Engineer"]'><span className="wrap">{text}</span></span></h1>
+                                    <p>dummy text of the printing and typesetting industry </p>
+                                    <button onClick={():void => console.log('connect')}>Lets connect<ArrowRightCircle size={25} /></button>
+                                </div>
+                            }
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5} >
-                        <img src={headerImg} alt="Header img" />
+                        <TrackVisibility>
+                            {({ isVisible  }) => 
+                                <div className={isVisible ? 'animate__animated animate__zoomIn' : ''}>
+                                    <img src={headerImg} alt="Header img" />
+                                </div>
+                            }
+                        </TrackVisibility>
                     </Col>
                 </Row>
             </Container>
