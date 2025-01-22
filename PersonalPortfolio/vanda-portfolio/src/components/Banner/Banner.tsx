@@ -77,15 +77,15 @@ export const Banner = (): JSX.Element => {
                             {({ isVisible  }) => 
                                 <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>    
                                     <span className="tagline">Welcome to my Portfolio</span>
-                                    <h1>{'Hi Im John Mugo'}</h1>
-                                    <h1>Im a <span className="txt-rotate"  data-rotate='["Web Developer", "Designer", "Freelancer", "C++ Developer", "Software Engineer"]'><span className="wrap">{text}</span></span></h1>
+                                    <h1>{"Hi I'm "}<span className="devname" >John Mugo</span></h1>
+                                    <h1>I'm a <span className="txt-rotate"  data-rotate='["Web Developer", "Designer", "Freelancer", "C++ Developer", "Software Engineer"]'><span className="wrap">{text}</span></span></h1>
                                     <p>dummy text of the printing and typesetting industry </p>
                                     <button onClick={():void => console.log('connect')}>Lets connect<ArrowRightCircle size={25} /></button>
                                 </div>
                             }
                         </TrackVisibility>
                     </Col>
-                    <Col xs={12} md={6} xl={5} >
+                    <Col xs={12} md={6} xl={5} id="header-img">
                         <TrackVisibility>
                             {({ isVisible  }) => 
                                 <div className={isVisible ? 'animate__animated animate__zoomIn' : ''}>

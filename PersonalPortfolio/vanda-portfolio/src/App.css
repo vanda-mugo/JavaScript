@@ -37,7 +37,6 @@ body{
   /*this means that the excess elements in the x axis are hidden and therefore any overflowing content will be clipped 
   and no scrollbars will be visible*/
   overflow-x: hidden;
-  position: relative;
   background-color: #121212 !important;
   color : #fff !important;
   font-family: 'Centra', sans-serif !important;  
@@ -50,18 +49,13 @@ h1, h2, h3, h4, h5, h6{
   line-height: normal;
 }
 
-@media screen and (min-width: 1200px){
-  body{
-    max-width: 100%;
+
+@media screen and (min-width: 1400px){
+  body .App .container{
+    max-width: 1320px;
+    margin: 0 auto;
   }
 }
-@media screen and (min-width: 1420px){
-  body{
-    max-width: 100%;
-  }
-}
-
-
 
 /*
 
