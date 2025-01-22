@@ -1,0 +1,42 @@
+.skill-slide {
+    padding-top:50px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+
+.container .skill-row{
+    margin-top: 50px;
+    padding:20px;
+    text-align: center;
+    height: 500px;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    border-radius: 80px;
+}
+
+.skill-slide ul{
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.skill-slide ul li img{
+    width: 150px;
+    height: 150px;
+    margin: 40px 10px 0 10px;
+    transition: filter 0.3s ease, transform 0.3s ease-in-out; /* Smooth transitions */
+    }
+
+.skill-slide ul li img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6)); /* Glowing effect */
+}
+
+@keyframes zigzag {
+    0% { transform: translate(-50%, -50%); }
+    25% { transform: translate(-40%, -40%); }
+    50% { transform: translate(-50%, -30%); }
+    75% { transform: translate(-60%, -40%); }
+    100% { transform: translate(-50%, -50%); }
+}
