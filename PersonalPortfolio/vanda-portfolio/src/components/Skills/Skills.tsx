@@ -1,7 +1,9 @@
 import React from 'react';
+
+import './slick.css';
+import './slick-theme.css';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+
 import './Skills.css';
 import cpp from '../../assets/icons/LanguageIcons/cpp.svg';
 import python from '../../assets/icons/LanguageIcons/python.svg';
@@ -80,8 +82,34 @@ export const Skills: React.FC = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
+    arrows: false,
     slidesToScroll: 1,
-    arrows : true,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
   };
 
   return (

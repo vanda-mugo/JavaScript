@@ -12,6 +12,7 @@
     height: 500px;
     background-color: hsla(0, 0%, 0%, 0.3);
     border-radius: 80px;
+    margin-bottom: 30px;
 }
 
 .skill-slide ul{
@@ -20,6 +21,7 @@
     margin: 30px auto;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .skill-slide ul li img{
     width: 150px;
