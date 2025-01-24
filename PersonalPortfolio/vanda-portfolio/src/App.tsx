@@ -2,6 +2,8 @@ import './App.css';
 import { NavBar } from './components/NavBar/NavBar';
 import { Banner } from './components/Banner/Banner';
 import { Skills } from './components/Skills/Skills';
+import { Services } from './components/Services/Services';
+
 function App() {
 
   return (
@@ -9,6 +11,7 @@ function App() {
       <NavBar />
       <Banner />
       < Skills />
+      <Services />
     </div>
   )
 }

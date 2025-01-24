@@ -1,3 +1,4 @@
+
 .skill-slide {
     padding-top:50px;
     border-radius: 5px;
@@ -9,9 +10,9 @@
     margin-top: 50px;
     padding:20px;
     text-align: center;
-    height: 500px;
+    min-height: 500px;
     background-color: hsla(0, 0%, 0%, 0.3);
-    border-radius: 80px;
+    border-radius: 60px;
     margin-bottom: 30px;
 }
 

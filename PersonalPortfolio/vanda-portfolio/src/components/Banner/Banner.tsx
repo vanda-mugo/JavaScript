@@ -15,7 +15,7 @@ export const Banner = (): JSX.Element => {
     const toRotate : string[] = ['Web Developer', 'Designer', 'Freelancer', 'C++ Developer', 'Software Engineer'];
     // delta can range anywhere between 200 to 300, this is milliseconds 
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 2000;
+    const period = 1500;
 
     // this useEffect will run each time the text state changes 
     useEffect(() => {
@@ -62,7 +62,7 @@ export const Banner = (): JSX.Element => {
             // in the case that the isDeleting is true and updatedText is empty string, we need to set isDeleting to false
             // We need to set the delta to 500ms, this is the time it takes to display the next word
             // we also need to increment the loopNum to display the next word
-            setDelta(500);
+            setDelta(250);
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
         }

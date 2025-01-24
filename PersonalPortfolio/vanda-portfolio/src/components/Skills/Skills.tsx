@@ -84,6 +84,8 @@ export const Skills: React.FC = () => {
     slidesToShow: 1,
     arrows: false,
     slidesToScroll: 1,
+    swipe: true,
+    touchMove: true,
     responsive: [
         {
           breakpoint: 1024,
@@ -115,24 +117,24 @@ export const Skills: React.FC = () => {
   return (
     <section className='skills'>
         <div className="container">
-            <div className="skill-row">
-                <h2>Skills</h2>
-                <Slider {...settings}>
-                    {skills.map((skill, index) => (
-                    <div key={index} className="skill-slide">
-                        <h3>{skill.category}</h3>
-                        <ul>
-                            {skill.items.map((item, index) => (
-                            <li key={index}>
-                                {item.name}
-                                <img src={item.icon} alt={item.name} /> 
-                            </li>
-                            ))}
-                        </ul>
-                    </div>
-                    ))}
-                </Slider>
-            </div>
+              <div className="skill-row">
+                  <h2>Skills</h2>
+                  <Slider {...settings}>
+                      {skills.map((skill, index) => (
+                      <div key={index} className="skill-slide">
+                          <h3>{skill.category}</h3>
+                          <ul>
+                              {skill.items.map((item, index) => (
+                              <li key={index}>
+                                  {item.name}
+                                  <img src={item.icon} alt={item.name} /> 
+                              </li>
+                              ))}
+                          </ul>
+                      </div>
+                      ))}
+                  </Slider>
+              </div>
         </div>
     </section>
   );
