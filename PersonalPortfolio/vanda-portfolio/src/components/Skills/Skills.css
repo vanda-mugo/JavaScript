@@ -1,4 +1,9 @@
 
+.container{
+    position: relative;
+    display: block;
+}
+
 .skill-slide {
     padding-top:50px;
     border-radius: 5px;
@@ -7,7 +12,11 @@
 
 
 .container .skill-row{
-    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
     padding:20px;
     text-align: center;
     min-height: 500px;

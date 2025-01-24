@@ -28,7 +28,7 @@ import  git from '../../assets/icons/ToolIcons/git.svg';
 import  vscode from '../../assets/icons/ToolIcons/vscode.svg';
 import  adobeIllustrator from '../../assets/icons/ToolIcons/adobeIllustrator.svg';
 
-
+import  PixelCard  from '../PixelCard/PixelCard';
 
 interface Skill {
   category: string;
@@ -117,6 +117,7 @@ export const Skills: React.FC = () => {
   return (
     <section className='skills'>
         <div className="container">
+            <PixelCard variant='default'>
               <div className="skill-row">
                   <h2>Skills</h2>
                   <Slider {...settings}>
@@ -135,6 +136,7 @@ export const Skills: React.FC = () => {
                       ))}
                   </Slider>
               </div>
+            </PixelCard>
         </div>
     </section>
   );

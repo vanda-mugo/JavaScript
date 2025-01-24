@@ -48,6 +48,10 @@ h1, h2, h3, h4, h5, h6{
   padding: 0;
   line-height: normal;
 }
+.App{
+  display: flex;
+  flex-direction: column;
+}
 
 
 @media screen and (min-width: 1400px){

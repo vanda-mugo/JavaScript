@@ -1,10 +1,6 @@
-.services h2{
-    color: #fff;
-    position: absolute;
-}
-
 
 .wrapper{
+    position: relative;
     width: 100%;
     display: flex;  
     justify-content: center;
@@ -88,14 +84,17 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./img1.jpeg');
+    background-image: url('../../assets/icons/ServicesBackgrounds/vanda.PNG');
 }
 .card[for="c2"] {
-    background-image: url('./img2.jpeg');
+    background-image: url('../../assets/icons/ServicesBackgrounds/vanda.PNG');
 }
 .card[for="c3"] {
-    background-image: url('./img3.jpeg');
+    background-image: url('../../assets/icons/ServicesBackgrounds/vanda.PNG');
 }
 .card[for="c4"] {
-    background-image: url('./img4.jpeg');
+    background-image: url('../../assets/icons/ServicesBackgrounds/vanda.PNG');
+}
+.card[for="c5"] {
+    background-image: url('../../assets/icons/ServicesBackgrounds/vanda.PNG');
 }
