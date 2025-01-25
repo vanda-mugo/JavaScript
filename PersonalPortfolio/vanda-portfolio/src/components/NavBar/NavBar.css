@@ -78,7 +78,7 @@ nav.navbar.scrolled{
     width: 50px;
     height: 50px;
     position: absolute;
-    background-color: #fff;
+    background-color: cyan;
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
@@ -124,7 +124,7 @@ the button remains layered above all other elements within the button*/
     content: "";
     width: 0%;
     height: 100%;
-    background-color: #fff;
+    background-color: cyan;
     transition: 0.3s ease-in-out;
     position: absolute;
     left: 0;

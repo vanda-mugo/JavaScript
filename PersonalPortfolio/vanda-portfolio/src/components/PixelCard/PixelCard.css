@@ -14,7 +14,7 @@
     display: grid;
     place-items: center;
     aspect-ratio: 2.64 / 1;
-    border: 1px solid #000000;
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 60px;
     isolation: isolate;
     transition: border-color 200ms cubic-bezier(0.5, 1, 0.89, 1);
