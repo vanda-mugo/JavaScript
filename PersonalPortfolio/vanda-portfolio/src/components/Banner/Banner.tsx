@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import './Banner.css';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import TrueFocus from '../TrueFocus/TrueFocus';
 
 
 export const Banner = (): JSX.Element => {
@@ -77,7 +78,14 @@ export const Banner = (): JSX.Element => {
                             {({ isVisible  }) => 
                                 <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>    
                                     <span className="tagline">Welcome to my Portfolio</span>
-                                    <h1>{"Hi I'm "}<span className="devname" >John Mugo</span></h1>
+                                    <h1>{"Hi I'm "}<span className="devname" ><TrueFocus 
+                                                                                sentence="John Mugo"
+                                                                                manualMode={false}
+                                                                                blurAmount={7}
+                                                                                borderColor="red"
+                                                                                animationDuration={1}
+                                                                                pauseBetweenAnimations={1}
+                                                                                /></span></h1>
                                     <h1>I'm a <span className="txt-rotate"  data-rotate='["Web Developer", "Designer", "Freelancer", "C++ Developer", "Software Engineer"]'><span className="wrap">{text}</span></span></h1>
                                     <p>dummy text of the printing and typesetting industry </p>
                                     <button onClick={():void => console.log('connect')}>Lets connect<ArrowRightCircle size={25} /></button>

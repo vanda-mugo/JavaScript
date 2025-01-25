@@ -86,6 +86,8 @@ export const Skills: React.FC = () => {
     slidesToScroll: 1,
     swipe: true,
     touchMove: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
         {
           breakpoint: 1024,

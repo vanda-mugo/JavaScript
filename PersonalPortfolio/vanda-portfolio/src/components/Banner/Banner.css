@@ -20,9 +20,10 @@
     background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
     border: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
     margin-left: 60px;
     display: inline-block;
+    border-radius: 5px;
   }
   .banner h1 {
     font-size: 65px;
@@ -32,6 +33,10 @@
     margin-bottom: 20px;
     display: block;
     margin-left: 60px;
+  }
+
+  .devname{
+    display: inline-flex;
   }
 
   .banner h1 span.devname, span.wrap{
@@ -66,6 +71,9 @@
     transition: 0.3s ease-in-out;
     line-height: 1;
   }
+  .banner button:hover{
+    color: cyan;
+  }
   .banner button:hover svg {
     margin-left: 25px;
   }
@@ -81,7 +89,6 @@
   }
 
 
-
   @keyframes updown {
       0% {
           transform: translateY(-20px);
@@ -95,6 +102,14 @@
   }
   /*select direct children of the element .txt-rotate */
   .txt-rotate > .wrap {
-    border-right: 0.07em solid #666;
+    border-right: 0.07em solid #7c7c7c;
+    animation: blink 0.5s infinite;
   }
+
+  @keyframes blink {
+    0% { border-color: #7c7c7c; }
+    50% { border-color: transparent; }
+    100% { border-color: #7c7c7c; }
+  }
+
 
