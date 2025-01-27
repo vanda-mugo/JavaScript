@@ -1,0 +1,25 @@
+main{
+    width: 550px;
+    background-color: rgba(43, 2, 97, 0.8);
+    height: 1000px;
+    color: white;
+    margin-top: 40px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main h2{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.detailsDiv{
+    display: flex;
+    justify-content: space-between;
+    
+}
+main ul li{
+    border-bottom: 1px solid #fff;
+}

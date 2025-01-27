@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from "react";
-import SearchBar from "../SearchBar/Search";
+import './Tracklist.css';
 
 //implement the hardcoded track array, an array of track objects 
 
@@ -7,33 +7,32 @@ import SearchBar from "../SearchBar/Search";
 // above 
 
 
-const Tracklist = ({tracks, onAdd, setQuery, query ,handleSearch}) => {
+const Tracklist = ({tracks, onAdd }) => {
 
     //content in the return statement 
     // use the map() method to iterate over arrays and render multiple components dynamically
     // so we need to add a new feature that adds a song to each song , the on add method will be sent
     // as a prop from the parent component 
     return (
-        <main>
-            <SearchBar setQuery={setQuery} query={query} handleSearch={handleSearch} />   
+        <main> 
+            <h2>Results</h2>
             <ul>
-            <h2>Results from Spotify</h2>
-            {tracks.map((track) => {
-                return (
-                    <li key={track.id}>
-                        <p>Song Name : {track.name}</p>
-                        <p>Artist Name : {track.artist}</p>
-                        <p>Album Name : {track.album}</p>
-                        <button onClick={() => {
-                            return onAdd(track);
-                        }}>
-                            +
-                        </button>
-                    </li>
-                )
-        })}
+                {tracks.map((track) => {
+                    return (
+                        <li key={track.id}>
+                            <h5>Song Name : {track.name}</h5>
+                            <div className="detailsDiv">
+                                <p>Artist Name : {track.artist} | Album Name : {track.album}</p>
+                                <button onClick={() => {
+                                    return onAdd(track);
+                                }}>
+                                    +
+                                </button>
+                            </div>
+                        </li>
+                    )
+                })}
             </ul>
-        
         </main>
     );
 };

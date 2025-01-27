@@ -5,6 +5,9 @@ import Tracklist from './Tracklist/Tracklist';
 import Auth from './ApiLogic/Auth';
 import { SpotifyAuth } from './ApiLogic/SpotifyAuth';
 import { savePlaylist } from './ApiLogic/SavePlaylist';
+import { Nav } from './Nav/Nav';
+import SearchBar from "./SearchBar/Search";
+
 
 /*
 example of a spotify url. point of saving the playlist 
@@ -106,21 +109,26 @@ const handleSavePlaylist = () => {
   // within the return we shall return the tracklist component  
   return (
     <>
-      <Tracklist 
-                tracks={trackListResult} 
-                onAdd={addTrack} 
-                handleSearch={handleSearch} 
-                query={query}
-                setQuery={setQuery}/>
+      <div  className='return'>
+        <Nav/>
+        <SearchBar setQuery={setQuery} query={query} handleSearch={handleSearch} />
+        <div className='appReturn'>
+          <Tracklist 
+                    tracks={trackListResult} 
+                    onAdd={addTrack} />
 
-      <Playlist  
-                PlaylistName={playlistName} 
-                playlistTracks={playlistTracks} 
-                onRemove={removeTrack} 
-                onNameChange={updateName} 
-                onSave={handleSavePlaylist} 
-      />
-      <Auth />
+          <Playlist  
+                    PlaylistName={playlistName} 
+                    playlistTracks={playlistTracks} 
+                    onRemove={removeTrack} 
+                    onNameChange={updateName} 
+                    onSave={handleSavePlaylist} 
+          />
+        </div>
+        <div>
+          <Auth />
+        </div>
+      </div>
     </>
   )
 }

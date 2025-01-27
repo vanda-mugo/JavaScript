@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react';
 import { SpotifyAuth } from './SpotifyAuth';
 
+// uses the spotifyAuth object to return the authUrl
 const authUrl = SpotifyAuth.getAuthUrl();
 
 const Auth = () => {
 
     useEffect(() => {
         const accessToken= SpotifyAuth.getAccessToken();
-        console.log(accessToken);
+        if(accessToken){
+            // to check the access token which can be used to make Api requests
+            console.log(accessToken);
+        }
     }, []);
 
     const handleLogin = () => {
