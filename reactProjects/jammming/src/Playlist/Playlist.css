@@ -1,6 +1,95 @@
-.playlist{
+div .items{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+}
+
+.items{
+    max-width: 550px;
+    min-width: 500px;
+    background-color: rgba(43, 2, 97, 0.8);
+    height: 410px;
+    color: white;
+    margin-top: 40px;
+    text-align: left;
+    padding:0 20px;
+    border-radius: 20px;
+    overflow-y: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.items input{
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: rgba(43, 2, 97, 1);
+    position: sticky;
+    top: 0;
+    max-width: 500px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+    height:60px;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.items ul{
+    list-style: none;
+}
+
+.items ul li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+
+.items ul li .removeTrack{
+    background: none;
+    border: none; /* Removes the border */
+    color: #ffffff; /* Sets the text color */
+    font-size: 40px; /* Increases the text size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+
+}
+
+/* Scrollbar Track */
+.items::-webkit-scrollbar {
+    width: 15px; /* Width of the entire scrollbar */
+  }
+
+  /* Scrollbar Thumb */
+.items::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 3px solid transparent; /* Space around the scrollbar thumb */
+    background-clip: content-box; /* Ensures the border is inside the thumb */
+  }
+  
+  /* Scrollbar Track */
+  .items::-webkit-scrollbar-track {
+    background: rgba(43, 2, 97, 1); /* Color of the scrollbar track */
+  }
+
+  .items ul li .removeTrack:hover{
+    color: rgb(0, 253, 0); /* Changes text color on hover */
+    transform: scale(1.2);
+  }
+
+
+
+  .saveButton{
+    color: #fff;
+    font-size: 25px;
+    background-color: rgba(43, 2, 97, 1);
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px transparent;
+    border-radius: 25px;
+}
+
+.saveButton:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
 }

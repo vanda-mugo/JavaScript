@@ -7,12 +7,12 @@
 
 .searchInput{
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border: 1px transparent;
     border-radius: 5px;
     font-size: 25px;
     text-align: center;
-    margin: 40px 0 20px 0 ;
+    margin: 0 0 20px 0 ;
 }
 
 .searchBar button{
@@ -22,7 +22,7 @@
     font-size: 20px;
     font-weight: 500;
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     width: 200px;
     display: inline-block;
     cursor: pointer;
