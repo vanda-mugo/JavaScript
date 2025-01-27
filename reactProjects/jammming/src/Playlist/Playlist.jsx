@@ -9,16 +9,18 @@ const Playlist = ({PlaylistName, playlistTracks, onRemove, onNameChange, onSave}
     };
 
     return (
-        <>
-            <div className="playlist">
-                <h2>From Playlist</h2>
+        <div className="playlistReturn">
+            <div className="items">
                 <input type="text" value={PlaylistName} onChange={onChange} className="inputBar" />
                 <ul>
                     {playlistTracks.map((track) => {
                         return (
                             <li key={track.id}>
-                                <p>{track.name} : artist {track.artist}</p>
-                                <button onClick={() => {
+                                <div>
+                                    <h3>{track.name}</h3>
+                                    <p>{track.artist} : {track.album}</p>
+                                </div>
+                                <button className="removeTrack" onClick={() => {
                                     return onRemove(track);}}>
                                         -
                                 </button>
@@ -27,15 +29,15 @@ const Playlist = ({PlaylistName, playlistTracks, onRemove, onNameChange, onSave}
                     })}
 
                 </ul>
-                <>
+            </div>
+            <>
                 {
                     playlistTracks.length > 0 && (
-                        <button onClick={onSave}>Save to Spotify</button>
+                        <button className="saveButton" onClick={onSave}>Save to Spotify</button>
                     )
                 }
-                </>
-            </div>
-        </>
+            </>
+        </div>
     );
 };
 

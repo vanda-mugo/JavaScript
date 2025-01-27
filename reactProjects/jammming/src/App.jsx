@@ -16,7 +16,7 @@ https://open.spotify.com/track/3BxeETRRl0uA1GRrXvK05g?si=1d8151ebc3fd42ed
 */
 
 function App() {
-  const [playlistName, setPlaylistName] = useState("my best");
+  const [playlistName, setPlaylistName] = useState("New Playlist");
   const [playlistTracks, setPlaylistTracks] = useState([]);
   const [trackListResult, setTrackListResult] = useState([]);
   const [query, setQuery] = React.useState("");

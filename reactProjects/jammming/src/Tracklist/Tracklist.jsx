@@ -15,15 +15,15 @@ const Tracklist = ({tracks, onAdd }) => {
     // as a prop from the parent component 
     return (
         <main> 
-            <h2>Results</h2>
+            <h2 className="header">Results</h2>
             <ul>
                 {tracks.map((track) => {
                     return (
                         <li key={track.id}>
-                            <h5>Song Name : {track.name}</h5>
+                            <h3> {track.name}</h3>
                             <div className="detailsDiv">
-                                <p>Artist Name : {track.artist} | Album Name : {track.album}</p>
-                                <button onClick={() => {
+                                <p>{track.artist} |  {track.album}</p>
+                                <button className="addButton" onClick={() => {
                                     return onAdd(track);
                                 }}>
                                     +

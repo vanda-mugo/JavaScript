@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { SpotifyAuth } from './SpotifyAuth';
+import './Auth.css';
 
 // uses the spotifyAuth object to return the authUrl
 const authUrl = SpotifyAuth.getAuthUrl();
@@ -15,12 +16,18 @@ const Auth = () => {
     }, []);
 
     const handleLogin = () => {
-        window.location = authUrl;
+        const accessToken = SpotifyAuth.getAccessToken();
+        if(accessToken)
+        {
+            window.alert("Already Logged in");
+        }else{
+            window.location = authUrl;
+        }
+        
     };
 
     return (
-        <div>
-            <h1>Login to Spotify</h1>
+        <div className='login'>
             <button onClick={handleLogin}>Login with Spotify</button>
         </div>
     );
