@@ -1,0 +1,45 @@
+const unboundedKnapsack = (weightCap, weights, values) => {
+    // Initialize the matrix
+    let matrix = [];
+    for (let i = 0; i <= weights.length; i++) {
+        let row = [];
+        for (let j = 0; j <= weightCap; j++) {
+            row.push(0); // Default value of 0 pushed to each cell
+        }
+        matrix.push(row);
+    }
+
+    // Fill the matrix
+    for (let i = 1; i <= weights.length; i++) {
+        // For the particular item we are considering in the matrix
+        let itemWeight = weights[i - 1];
+        let value = values[i - 1];
+
+        // Iterate through the columns
+        for (let j = 0; j <= weightCap; j++) {
+            // Define the weight limit for that column
+            let weightLimit = j;
+
+            if (itemWeight <= weightLimit) {
+                // Calculate the inclusion value, allowing for multiple inclusions of the same item
+                let inclusionValue = value + matrix[i][weightLimit - itemWeight];
+                // Define the case where you don't include the value
+                let exclusionValue = matrix[i - 1][j];
+                matrix[i][j] = Math.max(inclusionValue, exclusionValue);
+            } else {
+                // Return the previous best weight
+                matrix[i][j] = matrix[i - 1][j];
+            }
+        }
+    }
+
+    // Return the maximum value that can be achieved with the given weight capacity
+    return matrix[weights.length][weightCap];
+};
+
+// Example usage:
+const weightCap = 50;
+const weights = [10, 20, 30];
+const values = [60, 100, 120];
+const maxValue = unboundedKnapsack(weightCap, weights, values);
+console.log(maxValue); // Output will vary depending on the values and weights
