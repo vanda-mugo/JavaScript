@@ -8,6 +8,7 @@ import FavoriteRecipes from './features/favoriteRecipes/FavoriteRecipes.jsx';
 
 
 export function App(props) {
+  // note by this prop is from the Main.jsx where the store object has been sent to the child component as prop
   const {state, dispatch} = props;
 
   const visibleAllRecipes = getFilteredRecipes(state.allRecipes, state.searchTerm);

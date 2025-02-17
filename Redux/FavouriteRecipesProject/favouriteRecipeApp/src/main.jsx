@@ -6,6 +6,13 @@ import { App } from './App.jsx';
 import { store } from './store.js';
 
 const root = createRoot(document.getElementById('root'));
+
+/**
+ * note that the store has the combined reducers 
+ * this reducers are favoriteRecipesReducer,searchTermReducer,allRecipesReducer
+ * 
+ */
+
 const render = () => {
   // Pass `state` and `dispatch` props to <App />
   root.render(
