@@ -20,6 +20,16 @@ const rootReducer = combineReducers({
   });
 
 /**
+ * 
+ * when you combine reducers this way , the state object will have a structure such as this 
+   * {
+    favoriteRecipes: [...], // State managed by favoriteRecipesReducer
+    searchTerm: '', // State managed by searchTermReducer
+    allRecipes: [...] // State managed by allRecipesReducer
+    }
+ */
+
+/**
  * configures the Redux store with the root reducer 
  * 
  * @function
@@ -31,7 +41,7 @@ const rootReducer = combineReducers({
  * import { store } from 'path/to/store';
  * //use the store in your application, typically with the <Provider> component from react-redux
  */
-
+                                                                                                
 export const store = configureStore({
     reducer:rootReducer
 });
