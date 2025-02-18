@@ -55,7 +55,9 @@ export const store = configureStore({
  * so note that the store is the one that imports the Reducers 
  * 
  * @state_management :responsible for holding the entire state of the application. it acts as a single source 
- * of truth , ensuring that the state is centralized and consistent throughout the app. store.getState()
+ * of truth , ensuring that the state is centralized and consistent throughout the app. so the return  from the 
+ * reducer functions is maintained by redux across different calls.so initially when the application is rendered
+ * then what happens is that loadData returns the all Recipes data 
  * 
  * @dispatching_actions : the store provides dispatch methods which allow you to send actions to the store .
  * these actions describe the state change and are handled by reducer 
@@ -73,4 +75,15 @@ export const store = configureStore({
  * @accessing_state : the store provides the getState() method to retrieve the current state.This is useful for accessing the 
  * state without triggering state change
  * 
+ * 
+ * 
+ * note that when a Redux processes an action and returns a new state, any connected components that 
+ * depends on that state will re-render. This is an essential aspect of how react and redux works 
+ * together to ensure that the UI stays in sync with your applications state
+ * 
+ * components that use useSelector or are connected via connect (for a class components) subscribe to 
+ * specific slices of the state
+ * 
+ * when the state changes, useSelector or connect will trigger a rerender of the components that depend on the
+ * updated state
  */

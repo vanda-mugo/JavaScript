@@ -39,3 +39,9 @@ export const allRecipesReducer = (allRecipes = initialState, action) => {
       return allRecipes;
   }
 };
+
+
+/**
+ * this is for maintaining the slice 
+ * 
+ */
